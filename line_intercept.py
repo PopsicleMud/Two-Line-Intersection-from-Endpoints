@@ -49,6 +49,8 @@ y = round(y,5)
 print(f"intersection: x={x}, y={y}")
 intersection_label = "intersection"
 fig = plt.figure()
+fig.set_size_inches(4,3)
+fig.set_dpi(300)
 plt.plot([xa,xb],[ya,yb], label = "line AB")
 plt.plot([xc,xd],[yc,yd], label = "line CD")
 plt.plot(x,y, 'o', label = intersection_label,)
