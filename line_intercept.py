@@ -48,10 +48,12 @@ y = round(y,5)
 
 print(f"intersection: x={x}, y={y}")
 intersection_label = "intersection"
+fig = plt.figure()
 plt.plot([xa,xb],[ya,yb], label = "line AB")
 plt.plot([xc,xd],[yc,yd], label = "line CD")
 plt.plot(x,y, 'o', label = intersection_label,)
 plt.legend()
-plt.show()
+fig.show()
+fig.savefig("IntersectionPlot.png")
 
 
